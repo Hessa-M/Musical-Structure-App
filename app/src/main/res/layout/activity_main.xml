@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    tools:context="com.example.hessah.musicalstructureapp.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <TextView
+        android:id="@+id/musicLibrary"
+        style="@style/textView"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/ic_library_music_white_24dp"
+        android:text="@string/music_library" />
+
+    <TextView
+        android:id="@+id/Favorites"
+        style="@style/textView"
+        android:drawableLeft="@mipmap/ic_star_white_24dp"
+        android:text="@string/favorites" />
+
+
+</LinearLayout>
